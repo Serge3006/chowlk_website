@@ -9,7 +9,7 @@
     <th>Description</th>
   </tr>
   <tr>
-    <td><img src="./images/class.jpg" alt="Class block"></td>
+    <td><img src="_includes/images/class.jpg" alt="Class block"></td>
     <td>Smith</td>
     <td>50</td>
   </tr>
