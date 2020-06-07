@@ -2,7 +2,7 @@
 
 ### 2.1 Classes and Individuals
 
-<table style="width:100%">
+<table style="width:120%">
   <tr>
     <th>Diagram BLOCK</th>
     <th>OWL Element</th>
@@ -28,11 +28,11 @@
 
 ### 2.2 Universal Restriction for Object Properties
 
-<table style="width:100%">
+<table style="width:120%">
   <tr>
-    <th>Diagram BLOCK</th>
-    <th>OWL Element</th>
-    <th>Description</th>
+    <th style="width:45%">Diagram BLOCK</th>
+    <th style="width:40%">OWL Element</th>
+    <th style="width:35%">Description</th>
   </tr>
 
   <tr>
