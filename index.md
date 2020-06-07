@@ -12,7 +12,7 @@ Apache 2.0 License
 ## Table of Content
 
 {% include introduction.md %}
-!["Clas block"](/_includes/images/class.jpg "Class block")
+!["Class block"](/chowlk_website/_includes/images/class.jpg "Class block")
 
 {% include specification.md %}
 
