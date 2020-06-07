@@ -1,8 +1,8 @@
 ---
 ---
 
-@import 'jekyll-theme-cayman';
+@import 'variables';
 
-$content-width: 100%;
+$large-breakpoint: 10em;
 
 @import "{{site.theme}}";
