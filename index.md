@@ -13,7 +13,7 @@ Apache 2.0 License
 
 {% include introduction.md %}
 
-{% include specification.md %}
+{% include specification.html %}
 
 {% include recomendations.md %}
 
