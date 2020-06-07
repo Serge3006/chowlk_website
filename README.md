@@ -1,2 +1,7 @@
-# chowlk_website
-Test repository
+# CHOWLK Specification
+
+<b>Authors:</b><br>
+María Poveda-Villalón<br>
+Serge Chávez-Feria
+
+
