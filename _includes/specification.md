@@ -2,7 +2,7 @@
 
 ### 2.1 Basic Blocks
 
-![](images/class.jpg "Class block")
+![](_includes/images/class.jpg "Class block")
 
 <table style="width:100%">
   <tr>
