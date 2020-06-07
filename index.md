@@ -12,7 +12,7 @@ Apache 2.0 License
 ## Table of Content
 
 {% include introduction.md %}
-![](_includes/images/class.jpg "Class block")
+!["Clas block"](_includes/images/class.jpg "Class block")
 
 {% include specification.md %}
 
