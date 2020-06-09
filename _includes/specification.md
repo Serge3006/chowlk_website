@@ -4,9 +4,9 @@
 
 <table style="width:100%">
   <tr>
-    <th>Diagram BLOCK</th>
-    <th>OWL Element</th>
-    <th>Description</th>
+    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:20%">OWL Element</th>
+    <th style="width:60%">Description</th>
   </tr>
   <tr>
     <td><img src="images/class.jpg" alt="Class block"></td>
