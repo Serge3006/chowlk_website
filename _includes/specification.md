@@ -36,7 +36,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/universal_restriction_1.jpg" alt="Universal restriction block"></td>
+    <td><img src="images/universal_restriction_1.jpg" alt="Universal restriction block" height="60"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
@@ -46,7 +46,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/universal_restriction_2.jpg" alt="Universal restriction block"></td>
+    <td><img src="images/universal_restriction_2.jpg" alt="Universal restriction block" height="60"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
