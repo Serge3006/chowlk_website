@@ -82,7 +82,7 @@
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 1 of an existential restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty1</code>, and some the individuals for this property shall come from <code>Class2</code></td>
 
   </tr>
@@ -92,7 +92,7 @@
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 2 of an existential restriction between 2 concepts.</td>
 
   </tr>
@@ -102,7 +102,7 @@
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 3 of an existential restriction between 2 concepts.</td>
 
   </tr>
@@ -128,7 +128,7 @@
 
   <tr>
     <td><img src="images/no_domain_no_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
-    <td><code>ns:objectProperty rdf:type owl:ObjectProperty .<br></td>
+    <td><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
     <td>Object property <code>ns:objectProperty</code> without domain and range form 2.</td>
 
   </tr>
@@ -136,8 +136,8 @@
   <tr>
     <td><img src="images/yes_domain_yes_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
     <td>Object property <code>ns:objectProperty</code> with domain and range form 1.</td>
 
   </tr>
@@ -145,8 +145,8 @@
   <tr>
     <td><img src="images/yes_domain_yes_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
     <td>Object property <code>ns:objectProperty</code> with domain and range form 2.</td>
 
   </tr>
@@ -166,6 +166,4 @@
     <td>Object property <code>ns:objectProperty</code> with range but without domain.</td>
 
   </tr>
-
-
-</table>
+  </table>

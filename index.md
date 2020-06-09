@@ -12,7 +12,6 @@ Apache 2.0 License
 ## Table of Content
 
 {% include introduction.md %}
-!["Class block"](/chowlk_website/_includes/images/class.jpg "Class block")
 
 {% include specification.md %}
 
