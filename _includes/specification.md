@@ -32,7 +32,7 @@
   <tr>
     <th style="width:45%">Diagram BLOCK</th>
     <th style="width:40%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:15%">Description</th>
   </tr>
 
   <tr>
