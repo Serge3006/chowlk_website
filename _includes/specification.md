@@ -4,7 +4,7 @@
 
 <table style="width:100%">
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:20%" style="text-align:center">Diagram BLOCK</th>
     <th style="width:20%">OWL Element</th>
     <th style="width:60%">Description</th>
   </tr>
@@ -81,7 +81,7 @@
     <td><img src="images/existential_restriction_1.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 1 of an existential restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty1</code>, and some the individuals for this property shall come from <code>Class2</code></td>
 
@@ -91,7 +91,7 @@
     <td><img src="images/existential_restriction_2.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 2 of an existential restriction between 2 concepts.</td>
 
@@ -101,7 +101,7 @@
     <td><img src="images/existential_restriction_3.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 3 of an existential restriction between 2 concepts.</td>
 
