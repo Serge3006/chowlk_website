@@ -30,8 +30,8 @@
 
 <table style="width:100%">
   <tr>
-    <th style="width:45%">Diagram BLOCK</th>
-    <th style="width:40%">OWL Element</th>
+    <th style="width:40%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
     <th style="width:15%">Description</th>
   </tr>
 
@@ -41,7 +41,27 @@
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
-    <td>Universal restriction form 1.</td>
+    <td>Form 1 of an universal restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty1</code>, and all the individuals for this property shall come from <code>Class2</code></td>
+
+  </tr>
+
+  <tr>
+    <td><img src="images/universal_restriction_2.jpg" alt="Universal restriction block"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+    <td>Form 2 of an universal restriction between 2 concepts.</td>
+
+  </tr>
+
+  <tr>
+    <td><img src="images/universal_restriction_3.jpg" alt="Universal restriction block"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+    <td>Form 3 of an universal restriction between 2 concepts.</td>
 
   </tr>
 
