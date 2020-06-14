@@ -284,3 +284,26 @@
     <td>Disjointness between two concepts. Form 2.</td>
   </tr>
 </table>
+
+
+## 2.7 Relations between Properties
+
+The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples.
+<table style="width:100%">
+  <tr>
+    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:35%">Description</th>
+  </tr>
+
+  <tr>
+    <td><img src="images/subproperty_1.jpg" alt="Subproperty" height="50%"></td>
+    <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
+    <td>Sub-property relation between two object properties. Form 1.</td>
+  </tr>
+  <tr>
+    <td><img src="images/subproperty_2.jpg" alt="Subproperty" height="50%"></td>
+    <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
+    <td>Sub-property relation between two object properties. Form 2.</td>
+  </tr>
+</table>
