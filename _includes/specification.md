@@ -4,21 +4,24 @@
 
 <table style="width:100%">
   <tr>
-    <th style="width:20%" style="text-align:center">Diagram BLOCK</th>
+    <th style="width:30%" style="text-align:center">Diagram BLOCK</th>
     <th style="width:20%">OWL Element</th>
-    <th style="width:60%">Description</th>
+    <th style="width:50%">Description</th>
   </tr>
+
   <tr>
     <td><img src="images/class.jpg" alt="Class block"></td>
     <td><code>owl:Class</code></td>
     <td>Block to represent classes within the ontology conceptualization. 
     The content of the block should be accompanied with the prefix and the name of the concept on order to fully identify it.</td>
   </tr>
+
   <tr>
     <td><img src="images/unnamed_class.jpg" alt="Unnamed block"></td>
     <td><code>owl:Class</code></td>
     <td>Block to represent an unnamed or anonynoums class. Used to declare a restriction over a named class.</td>
   </tr>
+
   <tr>
     <td><img src="images/individual.jpg" alt="Individual block"></td>
     <td><code>owl:Individual</code></td>
@@ -55,12 +58,12 @@
         <code>owl:equivalentClass</code><br>
         <code>owl:disjointWith</code><br>
     </td>
-    <td>Block to indicate intersection or union of two or more <code>owl:Class</owl> elements. Additionally, it can be used to determine equivalence and disjoint relationships between concepts.</td>
+    <td>Block to indicate intersection or union of two or more <code>owl:Class</code> elements. Additionally, it can be used to determine equivalence and disjoint relationships between concepts.</td>
   </tr>
 
   <tr>
     <td><img src="images/namespaces.jpg" alt="Namespaces block"></td>
-    <td><code>@prefix base: &lt;http://theontology.namespace.com#&gt; .</code></td>
+    <td><code>@prefix base: &lt;http://namespace.com#&gt; .</code></td>
     <td>Block to indicate all the namespaces used in the ontology. The first namespace is the URI used for the current ontology. It is obligatory to include all the namespaces being used in order to use the ontology converter service.</td>
   </tr>
 
@@ -69,8 +72,6 @@
     <td><code>owl:AnnotationProperty</code></td>
     <td>Block to indicate the annotations and values describing the ontology. The annotations in use should include the prefix and the annotation name, as indicated in the figure. If custom annotations are utilized, the namespace block should the namespace for those annotation properties.</td>
   </tr>
-  
-
 </table>
 
 ### 2.2 Universal Restrictions for Object Properties
@@ -89,7 +90,6 @@
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
     <td>Form 1 of an universal restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and all the individuals for this property shall come from <code>Class2</code></td>
-
   </tr>
 
   <tr>
@@ -99,7 +99,6 @@
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
     <td>Form 2 of an universal restriction between 2 concepts.</td>
-
   </tr>
 
   <tr>
@@ -109,9 +108,7 @@
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
     <td>Form 3 of an universal restriction between 2 concepts.</td>
-
   </tr>
-
 </table>
 
 
@@ -131,7 +128,6 @@
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 1 of an existential restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and some the individuals for this property shall come from <code>Class2</code></td>
-
   </tr>
 
   <tr>
@@ -141,7 +137,6 @@
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 2 of an existential restriction between 2 concepts.</td>
-
   </tr>
 
   <tr>
@@ -151,9 +146,7 @@
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 3 of an existential restriction between 2 concepts.</td>
-
   </tr>
-
 </table>
 
 ### 2.3 Domain and Range for Object Properties
@@ -170,14 +163,12 @@
     <td><img src="images/no_domain_no_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
     <td>Object property <code>ns:objectProperty</code> without domain and range form 1.</td>
-
   </tr>
 
   <tr>
     <td><img src="images/no_domain_no_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
     <td>Object property <code>ns:objectProperty</code> without domain and range form 2.</td>
-
   </tr>
 
   <tr>
@@ -186,7 +177,6 @@
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
     <td>Object property <code>ns:objectProperty</code> with domain and range form 1.</td>
-
   </tr>
 
   <tr>
@@ -203,7 +193,6 @@
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with domain but without range.</td>
-
   </tr>
 
   <tr>
@@ -211,6 +200,5 @@
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with range but without domain.</td>
-
   </tr>
   </table>
