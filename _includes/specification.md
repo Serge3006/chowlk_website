@@ -299,11 +299,31 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   <tr>
     <td><img src="images/subproperty_1.jpg" alt="Subproperty" height="50%"></td>
     <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
-    <td>Sub-property relation between two object properties. Form 1.</td>
+    <td>Sub-property relationship between two object properties. Form 1.</td>
   </tr>
   <tr>
     <td><img src="images/subproperty_2.jpg" alt="Subproperty" height="50%"></td>
     <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
-    <td>Sub-property relation between two object properties. Form 2.</td>
+    <td>Sub-property relationship between two object properties. Form 2.</td>
+  </tr>
+  <tr>
+    <td><img src="images/equivalent_property_1.jpg" alt="Equivalent Property" height="50%"></td>
+    <td><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
+    <td>Equivalence relationship between two object properties. Form 1.</td>
+  </tr>
+  <tr>
+    <td><img src="images/equivalent_property_2.jpg" alt="Equivalent Property" height="50%"></td>
+    <td><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
+    <td>Equivalence relationship between two object properties. Form 2.</td>
+  </tr>
+  <tr>
+    <td><img src="images/inverse_1.jpg" alt="Inverse" height="50%"></td>
+    <td><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
+    <td>Inverse relationship between two object properties. Form 1.</td>
+  </tr>
+  <tr>
+    <td><img src="images/inverse_2.jpg" alt="Inverse" height="50%"></td>
+    <td><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
+    <td>Inverse relationship between two object properties. Form 2.</td>
   </tr>
 </table>
