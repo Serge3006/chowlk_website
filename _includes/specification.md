@@ -1,6 +1,6 @@
 ## 2. Specification
 
-### 2.1 Classes and Individuals
+### 2.1 Basic Elements
 
 <table style="width:100%">
   <tr>
@@ -24,6 +24,53 @@
     <td><code>owl:Individual</code></td>
     <td>Block to represent individuals</td>
   </tr>
+
+  <tr>
+    <td><img src="images/object_property.jpg" alt="Object property block"></td>
+    <td><code>owl:ObjectProperty</code></td>
+    <td>Standard way to represent object properties. Variations can apply to the type of line or the connections style. See sections 2.2 and 2.3 for further details.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/datatype_property.jpg" alt="Datatype property block"></td>
+    <td><code>owl:DatatypeProperty</code></td>
+    <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line or the content of the block. See sections 2.4 or 2.5 for further details.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/property.jpg" alt="Property block"></td>
+    <td><code>owl:ObjectProperty</code><br>
+        <code>owl:DatatypeProperty</code>
+    </td>
+    <td>Alternative option to represent object properties and datatype properties. Mainly used to represent sub-property or equivalence relationships between properties. For more details see section X.X</td>
+  </tr>
+
+
+
+
+  <tr>
+    <td><img src="images/circle.jpg" alt="Circle block"></td>
+    <td><code>owl:intersectionOf</code><br>
+        <code>owl:unionOf</code><br>
+        <code>owl:equivalentClass</code><br>
+        <code>owl:disjointWith</code><br>
+    </td>
+    <td>Block to indicate intersection or union of two or more <code>owl:Class</owl> elements. Additionally, it can be used to determine equivalence and disjoint relationships between concepts.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/namespaces.jpg" alt="Namespaces block"></td>
+    <td><code>@prefix base: &lt;http://theontology.namespace.com#&gt; .</code></td>
+    <td>Block to indicate all the namespaces used in the ontology. The first namespace is the URI used for the current ontology. It is obligatory to include all the namespaces being used in order to use the ontology converter service.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/metadata.jpg" alt="Metadata block"></td>
+    <td><code>owl:AnnotationProperty</code></td>
+    <td>Block to indicate the annotations and values describing the ontology. The annotations in use should include the prefix and the annotation name, as indicated in the figure. If custom annotations are utilized, the namespace block should the namespace for those annotation properties.</td>
+  </tr>
+  
+
 </table>
 
 ### 2.2 Universal Restrictions for Object Properties
@@ -83,7 +130,7 @@
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
-    <td>Form 1 of an existential restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty1</code>, and some the individuals for this property shall come from <code>Class2</code></td>
+    <td>Form 1 of an existential restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and some the individuals for this property shall come from <code>Class2</code></td>
 
   </tr>
 
