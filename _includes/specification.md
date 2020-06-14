@@ -35,6 +35,18 @@
   </tr>
 
   <tr>
+    <td><img src="images/subclass.jpg" alt="Sub-class block"></td>
+    <td><code>owl:subClassOf</code></td>
+    <td>Special arrows to indicate sub-class relationship.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/subclass.jpg" alt="Sub-class block"></td>
+    <td><code>rdf:type</code></td>
+    <td>Special arrows to indicate <code>rdf:type</code> relationship.</td>
+  </tr>
+
+  <tr>
     <td><img src="images/datatype_property.jpg" alt="Datatype property block"></td>
     <td><code>owl:DatatypeProperty</code></td>
     <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line or the content of the block. See sections 2.4 or 2.5 for further details.</td>
@@ -49,8 +61,6 @@
   </tr>
 
 
-
-
   <tr>
     <td><img src="images/circle.jpg" alt="Circle block"></td>
     <td><code>owl:intersectionOf</code><br>
@@ -63,7 +73,7 @@
 
   <tr>
     <td><img src="images/namespaces.jpg" alt="Namespaces block"></td>
-    <td><code>@prefix base: &lt;http://namespace.com#&gt; .</code></td>
+    <td><code>@prefix base: &lt;http://namespace.com#&gt;</code></td>
     <td>Block to indicate all the namespaces used in the ontology. The first namespace is the URI used for the current ontology. It is obligatory to include all the namespaces being used in order to use the ontology converter service.</td>
   </tr>
 
@@ -149,7 +159,7 @@
   </tr>
 </table>
 
-### 2.3 Domain and Range for Object Properties
+### 2.4 Domain and Range for Object Properties
 
 <table style="width:100%">
 
@@ -202,3 +212,75 @@
     <td>Object property <code>ns:objectProperty</code> with range but without domain.</td>
   </tr>
   </table>
+
+
+## 2.5 Intersection and Union of Concepts
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:35%">Description</th>
+  </tr>
+  
+  <tr>
+    <td><img src="images/intersection_1.jpg" alt="Intersection" height="50%"></td>
+    <td><code>owl:intersectionOf (ns:Class1 ns:Class2)</code></td>
+    <td>Intersection of two concepts. Form 1.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/intersection_2.jpg" alt="Intersection" height="50%"></td>
+    <td><code>owl:intersectionOf (ns:Class1 ns:Class2)</code></td>
+    <td>Intersection of two concepts. Form 2.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/union_1.jpg" alt="Union" height="50%"></td>
+    <td><code>owl:unionOf (ns:Class1 ns:Class2)</code></td>
+    <td>Union of two concepts. Form 1.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/union_2.jpg" alt="Union" height="50%"></td>
+    <td><code>owl:unionOf (ns:Class1 ns:Class2)</code></td>
+    <td>Union of two concepts. Form 2.</td>
+  </tr>
+</table>
+
+
+## 2.6 Equivalence and Disjointness of Concepts
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:35%">Description</th>
+  </tr>
+  
+  <tr>
+    <td><img src="images/equivalence_1.jpg" alt="Equivalence" height="50%"></td>
+    <td><code>ns:Class1 owl:equivalence ns:Class2</code></td>
+    <td>Equivalence between two concepts. Form 1.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/equivalence_2.jpg" alt="Equivalence" height="50%"></td>
+    <td><code>ns:Class1 owl:equivalence ns:Class2</code></td>
+    <td>Equivalence between two concepts. Form 2.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/disjoint_with_1.jpg" alt="Disjoint" height="50%"></td>
+    <td><code>ns:Class1 owl:disjointWith ns:Class2</code></td>
+    <td>Disjointness between two concepts. Form 1.</td>
+  </tr>
+
+  <tr>
+    <td><img src="images/disjoint_with_2.jpg" alt="Disjoint" height="50%"></td>
+    <td><code>ns:Class1 owl:disjointWith ns:Class2</code></td>
+    <td>Disjointness between two concepts. Form 2.</td>
+  </tr>
+</table>
