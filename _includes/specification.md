@@ -41,7 +41,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/subclass.jpg" alt="Sub-class block"></td>
+    <td><img src="images/type.jpg" alt="Sub-class block"></td>
     <td><code>rdf:type</code></td>
     <td>Special arrows to indicate <code>rdf:type</code> relationship.</td>
   </tr>
@@ -158,6 +158,26 @@
     <td>Form 3 of an existential restriction between 2 concepts.</td>
   </tr>
 </table>
+
+### 2.3 Universal Restrictions for Datatype Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:35%">Description</th>
+  </tr>
+  <tr>
+    <td><img src="images/universal_restriction_dp_1.jpg" alt="Universal restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 1 of an universal restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and all the values must be of type <code>datatype</code></td>
+  </tr>
+</table>
+
 
 ### 2.4 Domain and Range for Object Properties
 
