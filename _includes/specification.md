@@ -10,50 +10,50 @@
   </tr>
 
   <tr>
-    <td><img src="images/class.jpg" alt="Class block" class="first-column"></td>
+    <td class="first-column"><img src="images/class.jpg" alt="Class block"></td>
     <td><code>owl:Class</code></td>
     <td>Block to represent classes within the ontology conceptualization. 
     The content of the block should be accompanied with the prefix and the name of the concept on order to fully identify it.</td>
   </tr>
 
   <tr>
-    <td><img src="images/unnamed_class.jpg" alt="Unnamed block" class="first-column"></td>
+    <td class="first-column"><img src="images/unnamed_class.jpg" alt="Unnamed block"></td>
     <td><code>owl:Class</code></td>
     <td>Block to represent an unnamed or anonynoums class. Used to declare a restriction over a named class.</td>
   </tr>
 
   <tr>
-    <td><img src="images/individual.jpg" alt="Individual block" class="first-column"></td>
+    <td class="first-column"><img src="images/individual.jpg" alt="Individual block"></td>
     <td><code>owl:Individual</code></td>
     <td>Block to represent individuals</td>
   </tr>
 
   <tr>
-    <td><img src="images/object_property.jpg" alt="Object property block" class="first-column"></td>
+    <td class="first-column"><img src="images/object_property.jpg" alt="Object property block"></td>
     <td><code>owl:ObjectProperty</code></td>
     <td>Standard way to represent object properties. Variations can apply to the type of line or the connections style. See sections 2.2 and 2.3 for further details.</td>
   </tr>
 
   <tr>
-    <td><img src="images/subclass.jpg" alt="Sub-class block" class="first-column"></td>
+    <td class="first-column"><img src="images/subclass.jpg" alt="Sub-class block"></td>
     <td><code>owl:subClassOf</code></td>
     <td>Special arrows to indicate sub-class relationship.</td>
   </tr>
 
   <tr>
-    <td><img src="images/type.jpg" alt="Sub-class block" class="first-column"></td>
+    <td class="first-column"><img src="images/type.jpg" alt="Sub-class block"></td>
     <td><code>rdf:type</code></td>
     <td>Special arrows to indicate <code>rdf:type</code> relationship.</td>
   </tr>
 
   <tr>
-    <td><img src="images/datatype_property.jpg" alt="Datatype property block" class="first-column"></td>
+    <td class="first-column"><img src="images/datatype_property.jpg" alt="Datatype property block"></td>
     <td><code>owl:DatatypeProperty</code></td>
     <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line or the content of the block. See sections 2.4 or 2.5 for further details.</td>
   </tr>
 
   <tr>
-    <td><img src="images/property.jpg" alt="Property block" class="first-column"></td>
+    <td class="first-column"><img src="images/property.jpg" alt="Property block"></td>
     <td><code>owl:ObjectProperty</code><br>
         <code>owl:DatatypeProperty</code>
     </td>
@@ -62,7 +62,7 @@
 
 
   <tr>
-    <td><img src="images/circle.jpg" alt="Circle block" class="first-column"></td>
+    <td class="first-column"><img src="images/circle.jpg" alt="Circle block"></td>
     <td><code>owl:intersectionOf</code><br>
         <code>owl:unionOf</code><br>
         <code>owl:equivalentClass</code><br>
@@ -72,13 +72,13 @@
   </tr>
 
   <tr>
-    <td><img src="images/namespaces.jpg" alt="Namespaces block" class="first-column"></td>
+    <td class="first-column"><img src="images/namespaces.jpg" alt="Namespaces block"></td>
     <td><code>@prefix base: &lt;http://namespace.com#&gt;</code></td>
     <td>Block to indicate all the namespaces used in the ontology. The first namespace is the URI used for the current ontology. It is obligatory to include all the namespaces being used in order to use the ontology converter service.</td>
   </tr>
 
   <tr>
-    <td><img src="images/metadata.jpg" alt="Metadata block" class="first-column"></td>
+    <td class="first-column"><img src="images/metadata.jpg" alt="Metadata block"></td>
     <td><code>owl:AnnotationProperty</code></td>
     <td>Block to indicate the annotations and values describing the ontology. The annotations in use should include the prefix and the annotation name, as indicated in the figure. If custom annotations are utilized, the namespace block should the namespace for those annotation properties.</td>
   </tr>
