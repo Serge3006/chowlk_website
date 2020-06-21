@@ -174,7 +174,16 @@
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
     </td>
-    <td>Form 1 of an universal restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and all the values must be of type <code>datatype</code></td>
+    <td>Form 1 of an universal restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and all the values must be of type <code>datatype</code>.</td>
+  </tr>
+  <tr>
+    <td><img src="images/universal_restriction_dp_2.jpg" alt="Universal restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 2 of an universal restriction between a concept and a datatype.</td>
   </tr>
 </table>
 
