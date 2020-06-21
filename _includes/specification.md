@@ -497,7 +497,7 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   </tr>
 
   <tr>
-    <td class="first-column"><img src="images/individual_class_1.jpg" alt="Individual" height="50%"></td>
+    <td class="first-column"><img src="images/individual_class_2.jpg" alt="Individual" height="50%"></td>
     <td><code>ns:Individual1 rdf:type ns:Class1 .</code></td>
     <td>Form 2 of Individual type definition.</td>
   </tr>
