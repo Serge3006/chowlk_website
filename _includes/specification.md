@@ -159,7 +159,38 @@
   </tr>
 </table>
 
-### 2.3 Universal Restrictions for Datatype Properties
+
+### 2.4 Cardinality Restrictions for Object Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/cardinality_restriction_op.jpg" alt="Cardinality restriction block" height="50%"></td>
+    <td>
+      <code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;&emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
+        <br>
+      <code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;&emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
+    </td>
+    <td>Cardinality restriction of a concept on a property. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
+  </tr>
+  </table>
+
+
+
+### 2.4 Universal Restrictions for Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -188,7 +219,36 @@
 </table>
 
 
-### 2.4 Domain and Range for Object Properties
+### 2.4 Existential Restrictions for Datatype Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_dp_1.jpg" alt="Existential restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 1 of an existential restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and some values must be of type <code>datatype</code>.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/existential_restriction_dp_2.jpg" alt="Existential restriction block" height="50%"></td>
+    <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
+    </td>
+    <td>Form 2 of an existential restriction between a concept and a datatype.</td>
+  </tr>
+</table>
+
+
+### 2.5 Domain and Range for Object Properties
 
 <table style="width:100%">
 
@@ -243,7 +303,7 @@
   </table>
 
 
-## 2.5 Intersection and Union of Concepts
+### 2.6 Intersection and Union of Concepts
 
 <table style="width:100%">
 
@@ -279,7 +339,7 @@
 </table>
 
 
-## 2.6 Equivalence and Disjointness of Concepts
+### 2.7 Equivalence and Disjointness of Concepts
 
 <table style="width:100%">
 
@@ -315,7 +375,7 @@
 </table>
 
 
-## 2.7 Relations between Properties
+### 2.8 Relations between Properties
 
 The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples.
 <table style="width:100%">
