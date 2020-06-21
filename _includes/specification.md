@@ -182,13 +182,12 @@
 				&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
         &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
     </td>
-    <td>Cardinality restriction of a concept on a property. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
+    <td>Cardinality restriction of a concept on an object property. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
   </tr>
   </table>
 
 
-
-### 2.4 Universal Restrictions for Datatype Properties
+### 2.5 Universal Restrictions for Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -217,7 +216,7 @@
 </table>
 
 
-### 2.4 Existential Restrictions for Datatype Properties
+### 2.6 Existential Restrictions for Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -246,7 +245,7 @@
 </table>
 
 
-### 2.4 Cardinality Restrictions for Datatype Properties
+### 2.7 Cardinality Restrictions for Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -260,23 +259,19 @@
     <td>
       <code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
-        &emsp;&emsp;<code>owl:onClass ns:Class2 ] ,<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:minCardinality "N1"^^xsd:nonNegativeInteger ] ,<br></code>
         &emsp;&emsp;<code>[ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
-        &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:maxCardinality "N2"^^xsd:nonNegativeInteger ] .</code><br>
     </td>
-    <td>Cardinality restriction of a concept on a property. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
+    <td>Cardinality restriction of a concept on a datatype property. <code>Class1</code> is subclass of an anonymus concept which has an datatype property <code>datatypeProperty1</code>, and shall have at least N1 and at most N2 values. If the N2 element is equal to the letter N, it means <code>owl:maxCardinality</code> does not exist.</td>
   </tr>
   </table>
 
 
 
-
-
-### 2.5 Domain and Range for Object Properties
+### 2.8 Domain and Range for Object Properties
 
 <table style="width:100%">
 
@@ -301,16 +296,16 @@
   <tr>
     <td class="first-column"><img src="images/yes_domain_yes_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
-        &emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
+        &emsp;&emsp;<code>rdfs:domain ns:Class1 ;<br></code>
+        &emsp;&emsp;<code>rdfs:range ns:Class2 .<br></code></td>
     <td>Object property <code>ns:objectProperty</code> with domain and range form 1.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/yes_domain_yes_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
-        &emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
+        &emsp;&emsp;<code>rdfs:domain ns:Class1 ;<br></code>
+        &emsp;&emsp;<code>rdfs:range ns:Class2 .<br></code></td>
     <td>Object property <code>ns:objectProperty</code> with domain and range form 2.</td>
 
   </tr>
@@ -318,20 +313,60 @@
   <tr>
     <td class="first-column"><img src="images/yes_domain_no_range_op.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;<code>rdfs:domain owl:Class1 .</code></td>
+        &emsp;&emsp;<code>rdfs:domain ns:Class1 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with domain but without range.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/no_domain_yes_range_op.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;<code>rdfs:range owl:Class2 .</code></td>
+        &emsp;&emsp;<code>rdfs:range ns:Class2 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with range but without domain.</td>
   </tr>
   </table>
 
 
-### 2.6 Intersection and Union of Concepts
+### 2.9 Domain and Range for Datatype Properties
+
+<table style="width:100%">
+
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/no_domain_no_range_dp.jpg" alt="Domain and Range DP" height="50%"></td>
+    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty .</code></td>
+    <td>Datatype property <code>ns:datatypeProperty1</code> without domain and range.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/yes_domain_yes_range_dp.jpg" alt="Domain and Range DP" height="50%"></td>
+    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;</code>
+        &emsp;&emsp;<code>rdfs:domain ns:Class1 ;<br></code>
+        &emsp;&emsp;<code>rdfs:range datatype .<br></code></td>
+    <td>Datatype property <code>ns:datatypeProperty1</code> with domain and range.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/yes_domain_no_range_dp.jpg" alt="Domain and Range DP" height="50%"></td>
+    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;</code>
+        &emsp;&emsp;<code>rdfs:domain ns:Class1 .<br></code></td>
+    <td>Datatype property <code>ns:datatypeProperty1</code> with domain and without range.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/no_domain_yes_range_dp.jpg" alt="Domain and Range DP" height="50%"></td>
+    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;</code>
+        &emsp;&emsp;<code>rdfs:range datatype .<br></code></td>
+    <td>Datatype property <code>ns:datatypeProperty1</code> without domain and with range.</td>
+  </tr>
+</table>
+
+
+### 2.10 Intersection and Union of Concepts
 
 <table style="width:100%">
 
@@ -367,7 +402,7 @@
 </table>
 
 
-### 2.7 Equivalence and Disjointness of Concepts
+### 2.11 Equivalence and Disjointness of Concepts
 
 <table style="width:100%">
 
@@ -403,7 +438,7 @@
 </table>
 
 
-### 2.8 Relations between Properties
+### 2.12 Relations between Properties
 
 The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples.
 <table style="width:100%">
@@ -442,5 +477,40 @@ The following section applies to both type of properties: <code>owl:ObjectProper
     <td class="first-column"><img src="images/inverse_2.jpg" alt="Inverse" height="50%"></td>
     <td><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
     <td>Inverse relationship between two object properties. Form 2.</td>
+  </tr>
+</table>
+
+
+### 2.13 Constructs for Indiviuals and RDF data
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/individual_class_1.jpg" alt="Individual" height="50%"></td>
+    <td><code>ns:Individual1 rdf:type ns:Class1 .</code></td>
+    <td>Form 1 of Individual type definition.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/individual_class_1.jpg" alt="Individual" height="50%"></td>
+    <td><code>ns:Individual1 rdf:type ns:Class1 .</code></td>
+    <td>Form 2 of Individual type definition.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/rdf_1.jpg" alt="Individual" height="50%"></td>
+    <td><code>ns:Individual1 ns:objectProperty ns:Individual2 .</code></td>
+    <td>Association between individuals in RDF graphs.</td>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/rdf_1.jpg" alt="Individual" height="50%"></td>
+    <td><code>ns:Individual1 ns:datatypeProperty "datatype_value"^^datatype .</code></td>
+    <td>Association between individuals and datatype values.</td>
   </tr>
 </table>
