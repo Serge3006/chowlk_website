@@ -170,17 +170,17 @@ a {
     max-width: 64rem;
     padding: 2rem 0rem;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   @include medium {
     padding: 2rem 0rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   @include small {
     padding: 2rem 1rem;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   
   kbd {
