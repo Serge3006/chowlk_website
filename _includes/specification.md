@@ -94,7 +94,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/universal_restriction_1.jpg" alt="Universal restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/universal_restriction_1.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
@@ -103,7 +103,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/universal_restriction_2.jpg" alt="Universal restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/universal_restriction_2.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
@@ -112,7 +112,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/universal_restriction_3.jpg" alt="Universal restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/universal_restriction_3.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
@@ -132,7 +132,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/existential_restriction_1.jpg" alt="Existential restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/existential_restriction_1.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
@@ -141,7 +141,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/existential_restriction_2.jpg" alt="Existential restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/existential_restriction_2.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
@@ -150,7 +150,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/existential_restriction_3.jpg" alt="Existential restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/existential_restriction_3.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
@@ -168,7 +168,7 @@
     <th style="width:35%">Description</th>
   </tr>
   <tr>
-    <td><img src="images/universal_restriction_dp_1.jpg" alt="Universal restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/universal_restriction_dp_1.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
@@ -177,7 +177,7 @@
     <td>Form 1 of an universal restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and all the values must be of type <code>datatype</code>.</td>
   </tr>
   <tr>
-    <td><img src="images/universal_restriction_dp_2.jpg" alt="Universal restriction block" height="50%"></td>
+    <td class="first-column"><img src="images/universal_restriction_dp_2.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
@@ -199,19 +199,19 @@
   </tr>
 
   <tr>
-    <td><img src="images/no_domain_no_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
+    <td class="first-column"><img src="images/no_domain_no_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
     <td>Object property <code>ns:objectProperty</code> without domain and range form 1.</td>
   </tr>
 
   <tr>
-    <td><img src="images/no_domain_no_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
+    <td class="first-column"><img src="images/no_domain_no_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty .</code></td>
     <td>Object property <code>ns:objectProperty</code> without domain and range form 2.</td>
   </tr>
 
   <tr>
-    <td><img src="images/yes_domain_yes_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
+    <td class="first-column"><img src="images/yes_domain_yes_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
@@ -219,7 +219,7 @@
   </tr>
 
   <tr>
-    <td><img src="images/yes_domain_yes_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
+    <td class="first-column"><img src="images/yes_domain_yes_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
@@ -228,14 +228,14 @@
   </tr>
 
   <tr>
-    <td><img src="images/yes_domain_no_range_op.jpg" alt="Domain and Range" height="50%"></td>
+    <td class="first-column"><img src="images/yes_domain_no_range_op.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with domain but without range.</td>
   </tr>
 
   <tr>
-    <td><img src="images/no_domain_yes_range_op.jpg" alt="Domain and Range" height="50%"></td>
+    <td class="first-column"><img src="images/no_domain_yes_range_op.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
         &emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with range but without domain.</td>
@@ -254,25 +254,25 @@
   </tr>
   
   <tr>
-    <td><img src="images/intersection_1.jpg" alt="Intersection" height="50%"></td>
+    <td class="first-column"><img src="images/intersection_1.jpg" alt="Intersection" height="50%"></td>
     <td><code>owl:intersectionOf (ns:Class1 ns:Class2)</code></td>
     <td>Intersection of two concepts. Form 1.</td>
   </tr>
 
   <tr>
-    <td><img src="images/intersection_2.jpg" alt="Intersection" height="50%"></td>
+    <td class="first-column"><img src="images/intersection_2.jpg" alt="Intersection" height="50%"></td>
     <td><code>owl:intersectionOf (ns:Class1 ns:Class2)</code></td>
     <td>Intersection of two concepts. Form 2.</td>
   </tr>
 
   <tr>
-    <td><img src="images/union_1.jpg" alt="Union" height="50%"></td>
+    <td class="first-column"><img src="images/union_1.jpg" alt="Union" height="50%"></td>
     <td><code>owl:unionOf (ns:Class1 ns:Class2)</code></td>
     <td>Union of two concepts. Form 1.</td>
   </tr>
 
   <tr>
-    <td><img src="images/union_2.jpg" alt="Union" height="50%"></td>
+    <td class="first-column"><img src="images/union_2.jpg" alt="Union" height="50%"></td>
     <td><code>owl:unionOf (ns:Class1 ns:Class2)</code></td>
     <td>Union of two concepts. Form 2.</td>
   </tr>
@@ -290,25 +290,25 @@
   </tr>
   
   <tr>
-    <td><img src="images/equivalence_1.jpg" alt="Equivalence" height="50%"></td>
+    <td class="first-column"><img src="images/equivalence_1.jpg" alt="Equivalence" height="50%"></td>
     <td><code>ns:Class1 owl:equivalence ns:Class2</code></td>
     <td>Equivalence between two concepts. Form 1.</td>
   </tr>
 
   <tr>
-    <td><img src="images/equivalence_2.jpg" alt="Equivalence" height="50%"></td>
+    <td class="first-column"><img src="images/equivalence_2.jpg" alt="Equivalence" height="50%"></td>
     <td><code>ns:Class1 owl:equivalence ns:Class2</code></td>
     <td>Equivalence between two concepts. Form 2.</td>
   </tr>
 
   <tr>
-    <td><img src="images/disjoint_with_1.jpg" alt="Disjoint" height="50%"></td>
+    <td class="first-column"><img src="images/disjoint_with_1.jpg" alt="Disjoint" height="50%"></td>
     <td><code>ns:Class1 owl:disjointWith ns:Class2</code></td>
     <td>Disjointness between two concepts. Form 1.</td>
   </tr>
 
   <tr>
-    <td><img src="images/disjoint_with_2.jpg" alt="Disjoint" height="50%"></td>
+    <td class="first-column"><img src="images/disjoint_with_2.jpg" alt="Disjoint" height="50%"></td>
     <td><code>ns:Class1 owl:disjointWith ns:Class2</code></td>
     <td>Disjointness between two concepts. Form 2.</td>
   </tr>
@@ -326,32 +326,32 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   </tr>
 
   <tr>
-    <td><img src="images/subproperty_1.jpg" alt="Subproperty" height="50%"></td>
+    <td class="first-column"><img src="images/subproperty_1.jpg" alt="Subproperty" height="50%"></td>
     <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
     <td>Sub-property relationship between two object properties. Form 1.</td>
   </tr>
   <tr>
-    <td><img src="images/subproperty_2.jpg" alt="Subproperty" height="50%"></td>
+    <td class="first-column"><img src="images/subproperty_2.jpg" alt="Subproperty" height="50%"></td>
     <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
     <td>Sub-property relationship between two object properties. Form 2.</td>
   </tr>
   <tr>
-    <td><img src="images/equivalent_property_1.jpg" alt="Equivalent Property" height="50%"></td>
+    <td class="first-column"><img src="images/equivalent_property_1.jpg" alt="Equivalent Property" height="50%"></td>
     <td><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
     <td>Equivalence relationship between two object properties. Form 1.</td>
   </tr>
   <tr>
-    <td><img src="images/equivalent_property_2.jpg" alt="Equivalent Property" height="50%"></td>
+    <td class="first-column"><img src="images/equivalent_property_2.jpg" alt="Equivalent Property" height="50%"></td>
     <td><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
     <td>Equivalence relationship between two object properties. Form 2.</td>
   </tr>
   <tr>
-    <td><img src="images/inverse_1.jpg" alt="Inverse" height="50%"></td>
+    <td class="first-column"><img src="images/inverse_1.jpg" alt="Inverse" height="50%"></td>
     <td><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
     <td>Inverse relationship between two object properties. Form 1.</td>
   </tr>
   <tr>
-    <td><img src="images/inverse_2.jpg" alt="Inverse" height="50%"></td>
+    <td class="first-column"><img src="images/inverse_2.jpg" alt="Inverse" height="50%"></td>
     <td><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
     <td>Inverse relationship between two object properties. Form 2.</td>
   </tr>
