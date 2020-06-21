@@ -88,9 +88,9 @@
 
 <table style="width:100%">
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:25%">Diagram BLOCK</th>
     <th style="width:45%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:30%">Description</th>
   </tr>
 
   <tr>
@@ -126,9 +126,9 @@
 
 <table style="width:100%">
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:25%">Diagram BLOCK</th>
     <th style="width:45%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:30%">Description</th>
   </tr>
 
   <tr>
@@ -163,9 +163,9 @@
 
 <table style="width:100%">
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:25%">Diagram BLOCK</th>
     <th style="width:45%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:30%">Description</th>
   </tr>
   <tr>
     <td class="first-column"><img src="images/universal_restriction_dp_1.jpg" alt="Universal restriction block" height="50%"></td>
@@ -193,9 +193,9 @@
 <table style="width:100%">
 
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:25%">Diagram BLOCK</th>
     <th style="width:45%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:30%">Description</th>
   </tr>
 
   <tr>
@@ -248,9 +248,9 @@
 <table style="width:100%">
 
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:25%">Diagram BLOCK</th>
     <th style="width:45%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:30%">Description</th>
   </tr>
   
   <tr>
@@ -284,9 +284,9 @@
 <table style="width:100%">
 
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:25%">Diagram BLOCK</th>
     <th style="width:45%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:30%">Description</th>
   </tr>
   
   <tr>
@@ -320,9 +320,9 @@
 The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples.
 <table style="width:100%">
   <tr>
-    <th style="width:20%">Diagram BLOCK</th>
+    <th style="width:25%">Diagram BLOCK</th>
     <th style="width:45%">OWL Element</th>
-    <th style="width:35%">Description</th>
+    <th style="width:30%">Description</th>
   </tr>
 
   <tr>
