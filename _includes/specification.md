@@ -176,10 +176,8 @@
         &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
-        &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
-        <br>
-      <code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+        &emsp;&emsp;<code>owl:onClass ns:Class2 ] ,<br></code>
+        &emsp;&emsp;<code>[ rdf:type owl:Restriction ;<br></code>
 				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
 				&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
         &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
@@ -246,6 +244,36 @@
     <td>Form 2 of an existential restriction between a concept and a datatype.</td>
   </tr>
 </table>
+
+
+### 2.4 Cardinality Restrictions for Datatype Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/cardinality_restriction_dp.jpg" alt="Cardinality restriction block" height="50%"></td>
+    <td>
+      <code>ns:Class1 rdf:type owl:Class ;<br></code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;&emsp;<code>owl:onClass ns:Class2 ] ,<br></code>
+        &emsp;&emsp;<code>[ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
+    </td>
+    <td>Cardinality restriction of a concept on a property. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
+  </tr>
+  </table>
+
+
+
 
 
 ### 2.5 Domain and Range for Object Properties
@@ -351,13 +379,13 @@
   
   <tr>
     <td class="first-column"><img src="images/equivalence_1.jpg" alt="Equivalence" height="50%"></td>
-    <td><code>ns:Class1 owl:equivalence ns:Class2</code></td>
+    <td><code>ns:Class1 owl:equivalentClass ns:Class2</code></td>
     <td>Equivalence between two concepts. Form 1.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/equivalence_2.jpg" alt="Equivalence" height="50%"></td>
-    <td><code>ns:Class1 owl:equivalence ns:Class2</code></td>
+    <td><code>ns:Class1 owl:equivalentClass ns:Class2</code></td>
     <td>Equivalence between two concepts. Form 2.</td>
   </tr>
 
