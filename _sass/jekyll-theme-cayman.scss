@@ -170,17 +170,17 @@ a {
     max-width: 64rem;
     padding: 2rem 0rem;
     margin: 0 auto;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   @include medium {
     padding: 2rem 0rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   @include small {
     padding: 2rem 1rem;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
   }
   
   kbd {
@@ -220,7 +220,7 @@ a {
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
