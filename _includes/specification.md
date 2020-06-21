@@ -96,27 +96,27 @@
   <tr>
     <td class="first-column"><img src="images/universal_restriction_1.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
     <td>Form 1 of an universal restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and all the individuals for this property shall come from <code>Class2</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/universal_restriction_2.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
     <td>Form 2 of an universal restriction between 2 concepts.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/universal_restriction_3.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:allValuesFrom ns:Class2 ] .</code></td>
     <td>Form 3 of an universal restriction between 2 concepts.</td>
   </tr>
 </table>
@@ -134,27 +134,27 @@
   <tr>
     <td class="first-column"><img src="images/existential_restriction_1.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 1 of an existential restriction between 2 concepts. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and some the individuals for this property shall come from <code>Class2</code></td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/existential_restriction_2.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 2 of an existential restriction between 2 concepts.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/existential_restriction_3.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:someValuesFrom ns:Class2 ] .</code></td>
     <td>Form 3 of an existential restriction between 2 concepts.</td>
   </tr>
 </table>
@@ -173,16 +173,16 @@
     <td class="first-column"><img src="images/cardinality_restriction_op.jpg" alt="Cardinality restriction block" height="50%"></td>
     <td>
       <code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
-        &emsp;&emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
         <br>
       <code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
-        &emsp;&emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
     </td>
     <td>Cardinality restriction of a concept on a property. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
   </tr>
@@ -201,18 +201,18 @@
   <tr>
     <td class="first-column"><img src="images/universal_restriction_dp_1.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
     </td>
     <td>Form 1 of an universal restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and all the values must be of type <code>datatype</code>.</td>
   </tr>
   <tr>
     <td class="first-column"><img src="images/universal_restriction_dp_2.jpg" alt="Universal restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:allValuesFrom datatype ] .</code>
     </td>
     <td>Form 2 of an universal restriction between a concept and a datatype.</td>
   </tr>
@@ -230,18 +230,18 @@
   <tr>
     <td class="first-column"><img src="images/existential_restriction_dp_1.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
     </td>
     <td>Form 1 of an existential restriction between a concept and a datatype. <code>Class1</code> is subclass of an anonymus concept which has a datatype property <code>datatypeProperty1</code>, and some values must be of type <code>datatype</code>.</td>
   </tr>
   <tr>
     <td class="first-column"><img src="images/existential_restriction_dp_2.jpg" alt="Existential restriction block" height="50%"></td>
     <td><code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
-				&emsp;&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
+        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;&emsp;<code>owl:onProperty ns:datatypeProperty1 ;<br></code>
+				&emsp;&emsp;<code>owl:someValuesFrom datatype ] .</code>
     </td>
     <td>Form 2 of an existential restriction between a concept and a datatype.</td>
   </tr>
@@ -273,16 +273,16 @@
   <tr>
     <td class="first-column"><img src="images/yes_domain_yes_range_op_1.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
+        &emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
+        &emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
     <td>Object property <code>ns:objectProperty</code> with domain and range form 1.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/yes_domain_yes_range_op_2.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
+        &emsp;&emsp;<code>rdfs:domain owl:Class1 ;<br></code>
+        &emsp;&emsp;<code>rdfs:range owl:Class2 .<br></code></td>
     <td>Object property <code>ns:objectProperty</code> with domain and range form 2.</td>
 
   </tr>
@@ -290,14 +290,14 @@
   <tr>
     <td class="first-column"><img src="images/yes_domain_no_range_op.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:domain owl:Class1 .</code></td>
+        &emsp;&emsp;<code>rdfs:domain owl:Class1 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with domain but without range.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/no_domain_yes_range_op.jpg" alt="Domain and Range" height="50%"></td>
     <td><code>ns:objectProperty rdf:type owl:ObjectProperty ;<br></code>
-        &emsp;&emsp;&emsp;<code>rdfs:range owl:Class2 .</code></td>
+        &emsp;&emsp;<code>rdfs:range owl:Class2 .</code></td>
     <td>Object property <code>ns:objectProperty</code> with range but without domain.</td>
   </tr>
   </table>
