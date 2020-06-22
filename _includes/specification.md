@@ -187,6 +187,35 @@
   </table>
 
 
+### 2.4 Other Characteristics for Object Properties
+
+<table style="width:100%">
+  <tr>
+    <th style="width:25%">Diagram BLOCK</th>
+    <th style="width:45%">OWL Element</th>
+    <th style="width:30%">Description</th>
+  </tr>
+
+  <tr>
+    <td class="first-column"><img src="images/functional_op_1.jpg" alt="Functional OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:FunctionalProperty .</code>
+    </td>
+    <td>Form 1 of a functional property.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/functional_op_2.jpg" alt="Functional OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:FunctionalProperty .</code>
+    </td>
+    <td>Form 2 of a functional property.</td>
+  </tr>
+  </table>
+
+
+
 ### 2.5 Universal Restrictions for Datatype Properties
 
 <table style="width:100%">
