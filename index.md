@@ -15,8 +15,6 @@ Apache 2.0 License
 
 {% include specification.md %}
 
-{% include recomendations.md %}
-
 {% include service.md %}
 
 {% include references.md %}
