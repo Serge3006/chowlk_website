@@ -212,6 +212,54 @@
     </td>
     <td>Form 2 of a functional property.</td>
   </tr>
+  <tr>
+    <td class="first-column"><img src="images/inverse_functional_op_1.jpg" alt="Inverse Functional OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:InverseFunctionalProperty .</code>
+    </td>
+    <td>Form 1 of an inverse functional property.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/inverse_functional_op_2.jpg" alt="Inverse Functional OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:InverseFunctionalProperty .</code>
+    </td>
+    <td>Form 2 of an inverse functional property.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/symetric_op_1.jpg" alt="Symmetric OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:SymmetricProperty .</code>
+    </td>
+    <td>Form 1 of a symmetric property.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/symetric_op_2.jpg" alt="Symmetric OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:SymmetricProperty .</code>
+    </td>
+    <td>Form 2 of a symmetric property.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/transitive_op_1.jpg" alt="Transitive OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:TransitiveProperty .</code>
+    </td>
+    <td>Form 1 of a transitive property.</td>
+  </tr>
+  <tr>
+    <td class="first-column"><img src="images/transitive_op_2.jpg" alt="Transitive OP block" height="50%"></td>
+    <td>
+      <code>ns:objectProperty1 rdf:type owl:ObjectProperty ,<br></code>
+        &emsp;&emsp;<code>owl:TransitiveProperty .</code>
+    </td>
+    <td>Form 2 of a transitive property.</td>
+  </tr>
   </table>
 
 
