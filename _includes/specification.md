@@ -1,5 +1,7 @@
 ## 2. Specification
 
+This sections gives detailed information about the drawio blocks used to represent the OWL ontological elements normally used in the construction of an ontology. The specification is structured around the three main elements in an ontology: <code>owl:Class</code>, <code>owl:ObjectProperty</code> and <code>owl:DatatypeProperty</code>. Each table in the sub-sections contains not only the diagram block but also the equivalent owl code, and a description.
+
 ### 2.1 Basic Elements
 
 <table style="width:100%">
@@ -31,7 +33,7 @@
   <tr>
     <td class="first-column"><img src="images/object_property.jpg" alt="Object property block"></td>
     <td><code>owl:ObjectProperty</code></td>
-    <td>Standard way to represent object properties. Variations can apply to the type of line or the connections style. See sections 2.2 and 2.3 for further details.</td>
+    <td>Standard way to represent object properties. Variations can apply to the type of line or the connections style depending on the range or domain specification. For more details see section 2.10.</td>
   </tr>
 
   <tr>
@@ -49,7 +51,7 @@
   <tr>
     <td class="first-column"><img src="images/datatype_property.jpg" alt="Datatype property block"></td>
     <td><code>owl:DatatypeProperty</code></td>
-    <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line or the content of the block. See sections 2.4 or 2.5 for further details.</td>
+    <td>Standard way to represent datatype properties attached to a specific <code>owl:Class</code> element. Variations can apply to the type of outer line depending on the domain and range specification. For more details see section 2.11.</td>
   </tr>
 
   <tr>
@@ -57,7 +59,7 @@
     <td><code>owl:ObjectProperty</code><br>
         <code>owl:DatatypeProperty</code>
     </td>
-    <td>Alternative option to represent object properties and datatype properties. Mainly used to represent sub-property or equivalence relationships between properties. For more details see section X.X</td>
+    <td>Alternative option to represent object properties and datatype properties. Mainly used to represent relationships between properties. For more details see section 2.14.</td>
   </tr>
 
 
@@ -173,21 +175,21 @@
     <td class="first-column"><img src="images/cardinality_restriction_op.jpg" alt="Cardinality restriction block" height="50%"></td>
     <td>
       <code>ns:Class1 rdf:type owl:Class ;<br></code>
-        &emsp;&emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
-        &emsp;&emsp;<code>owl:onClass ns:Class2 ] ,<br></code>
-        &emsp;&emsp;<code>[ rdf:type owl:Restriction ;<br></code>
-				&emsp;&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
-				&emsp;&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
-        &emsp;&emsp;<code>owl:onClass ns:Class2 ] .</code><br>
+        &emsp;<code>rdfs:subClassOf [ rdf:type owl:Restriction ;<br></code>
+				&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;<code>owl:minQualifiedCardinality "N1"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;<code>owl:onClass ns:Class2 ] ,<br></code>
+        &emsp;<code>[ rdf:type owl:Restriction ;<br></code>
+				&emsp;<code>owl:onProperty ns:objectProperty ;<br></code>
+				&emsp;<code>owl:maxQualifiedCardinality "N2"^^xsd:nonNegativeInteger ;<br></code>
+        &emsp;<code>owl:onClass ns:Class2 ] .</code><br>
     </td>
     <td>Cardinality restriction of a concept on an object property. <code>Class1</code> is subclass of an anonymus concept which has an object property <code>objectProperty</code>, and shall have at least N1 and at most N2 individuals from class <code>Class2</code>. If the N2 element is equal to the letter N, it means <code>owl:maxQualifiedCardinality</code> does not exist.</td>
   </tr>
   </table>
 
 
-### 2.4 Other Characteristics for Object Properties
+### 2.5 Other Characteristics of Object Properties
 
 <table style="width:100%">
   <tr>
@@ -263,7 +265,7 @@
   </table>
 
 
-### 2.5 Universal Restrictions for Datatype Properties
+### 2.6 Universal Restrictions for Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -292,7 +294,7 @@
 </table>
 
 
-### 2.6 Existential Restrictions for Datatype Properties
+### 2.7 Existential Restrictions for Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -321,7 +323,7 @@
 </table>
 
 
-### 2.7 Cardinality Restrictions for Datatype Properties
+### 2.8 Cardinality Restrictions for Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -346,7 +348,7 @@
   </table>
 
 
-### 2.4 Other Characteristics for Datatype Properties
+### 2.9 Other Characteristics of Datatype Properties
 
 <table style="width:100%">
   <tr>
@@ -374,7 +376,7 @@
 </table>
 
 
-### 2.8 Domain and Range for Object Properties
+### 2.10 Domain and Range for Object Properties
 
 <table style="width:100%">
 
@@ -429,7 +431,7 @@
   </table>
 
 
-### 2.9 Domain and Range for Datatype Properties
+### 2.11 Domain and Range for Datatype Properties
 
 <table style="width:100%">
 
@@ -447,7 +449,7 @@
 
   <tr>
     <td class="first-column"><img src="images/yes_domain_yes_range_dp.jpg" alt="Domain and Range DP" height="50%"></td>
-    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;</code>
+    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;<br></code>
         &emsp;&emsp;<code>rdfs:domain ns:Class1 ;<br></code>
         &emsp;&emsp;<code>rdfs:range datatype .<br></code></td>
     <td>Datatype property <code>ns:datatypeProperty1</code> with domain and range.</td>
@@ -455,21 +457,21 @@
 
   <tr>
     <td class="first-column"><img src="images/yes_domain_no_range_dp.jpg" alt="Domain and Range DP" height="50%"></td>
-    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;</code>
+    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;<br></code>
         &emsp;&emsp;<code>rdfs:domain ns:Class1 .<br></code></td>
     <td>Datatype property <code>ns:datatypeProperty1</code> with domain and without range.</td>
   </tr>
 
   <tr>
     <td class="first-column"><img src="images/no_domain_yes_range_dp.jpg" alt="Domain and Range DP" height="50%"></td>
-    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;</code>
+    <td><code>ns:datatypeProperty1 rdf:type owl:DatatypeProperty ;<br></code>
         &emsp;&emsp;<code>rdfs:range datatype .<br></code></td>
     <td>Datatype property <code>ns:datatypeProperty1</code> without domain and with range.</td>
   </tr>
 </table>
 
 
-### 2.10 Intersection and Union of Concepts
+### 2.12 Intersection and Union of Concepts
 
 <table style="width:100%">
 
@@ -505,7 +507,7 @@
 </table>
 
 
-### 2.11 Equivalence and Disjointness of Concepts
+### 2.13 Equivalence and Disjointness of Concepts
 
 <table style="width:100%">
 
@@ -541,9 +543,9 @@
 </table>
 
 
-### 2.12 Relations between Properties
+### 2.14 Relations between Properties
 
-The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples.
+The following section applies to both type of properties: <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>. For demonstration purposes we will only use object properties in the examples. It is also indicated if the OWL construct applies to object properties, datatype properties, or both.
 <table style="width:100%">
   <tr>
     <th style="width:25%">Diagram BLOCK</th>
@@ -554,37 +556,39 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   <tr>
     <td class="first-column"><img src="images/subproperty_1.jpg" alt="Subproperty" height="50%"></td>
     <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
-    <td>Sub-property relationship between two object properties. Form 1.</td>
+    <td>Form 1 of sub-property relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
   <tr>
     <td class="first-column"><img src="images/subproperty_2.jpg" alt="Subproperty" height="50%"></td>
     <td><code>ns:objectProperty1 rdfs:subPropertyOf ns:objectProperty2</code></td>
-    <td>Sub-property relationship between two object properties. Form 2.</td>
+    <td>Form 2 of sub-property relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
   <tr>
     <td class="first-column"><img src="images/equivalent_property_1.jpg" alt="Equivalent Property" height="50%"></td>
-    <td><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
-    <td>Equivalence relationship between two object properties. Form 1.</td>
+    <td><code>ns:objectProperty1</code><br>
+    &emsp;&emsp;<code>owl:equivalentProperty ns:objectProperty2</code></td>
+    <td>Form 1 of Equivalence relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
   <tr>
     <td class="first-column"><img src="images/equivalent_property_2.jpg" alt="Equivalent Property" height="50%"></td>
-    <td><code>ns:objectProperty1 owl:equivalentProperty ns:objectProperty2</code></td>
-    <td>Equivalence relationship between two object properties. Form 2.</td>
+    <td><code>ns:objectProperty1</code><br>
+    &emsp;&emsp;<code>owl:equivalentProperty ns:objectProperty2</code></td>
+    <td>Form 2 of equivalence relationship between two object properties. This construct applies to <code>owl:ObjectProperties</code> and <code>owl:DatatypeProperties</code>.</td>
   </tr>
   <tr>
     <td class="first-column"><img src="images/inverse_1.jpg" alt="Inverse" height="50%"></td>
     <td><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
-    <td>Inverse relationship between two object properties. Form 1.</td>
+    <td>Form 1 of inverse relationship between two object properties.</td>
   </tr>
   <tr>
     <td class="first-column"><img src="images/inverse_2.jpg" alt="Inverse" height="50%"></td>
     <td><code>ns:objectProperty1 owl:inverseOf ns:objectProperty2</code></td>
-    <td>Inverse relationship between two object properties. Form 2.</td>
+    <td>Form 2 of inverse relationship between two object properties.</td>
   </tr>
 </table>
 
 
-### 2.13 Constructs for Indiviuals and RDF data
+### 2.15 Constructs for Indiviuals and RDF data
 
 <table style="width:100%">
   <tr>
@@ -612,8 +616,8 @@ The following section applies to both type of properties: <code>owl:ObjectProper
   </tr>
 
   <tr>
-    <td class="first-column"><img src="images/rdf_1.jpg" alt="Individual" height="50%"></td>
-    <td><code>ns:Individual1 ns:datatypeProperty "datatype_value"^^datatype .</code></td>
+    <td class="first-column"><img src="images/rdf_2.jpg" alt="Individual" height="50%"></td>
+    <td><code>ns:Individual1 ns:datatypeProperty "value"^^datatype .</code></td>
     <td>Association between individuals and datatype values.</td>
   </tr>
 </table>
