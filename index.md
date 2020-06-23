@@ -11,15 +11,23 @@ Apache 2.0 License
 
 ## Table of Content
 
-1. [Introduction](#introduction.md)
-2. [Specification](#specification.md)
+1. [Introduction](#introduction)
+2. [Specification](#specification)
+3. [CHOWLK Code Generation Service](#service)
+4. [References](#references)
+5. [Acknowledgment](#acknowledgment)
 
+<a name="introduction"></a>
 {% include introduction.md %}
 
+<a name="specification"></a>
 {% include specification.md %}
 
+<a name="service"></a>
 {% include service.md %}
 
+<a name="reference"></a>
 {% include references.md %}
 
+<a name="acknowledgment"></a>
 {% include acknowledgment.md %}
