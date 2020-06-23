@@ -11,6 +11,10 @@ Apache 2.0 License
 
 ## Table of Content
 
+<ol>
+<li><a href="introduction.md">Introduction</a></li>
+</ol>
+
 {% include introduction.md %}
 
 {% include specification.md %}
