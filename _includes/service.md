@@ -1,4 +1,4 @@
-## 3. CHOWLK Code Generation Service
+## 4. CHOWLK Code Generation Service
 
 The above specification comes together with a web service that automatically transform your conceptualization into OWL code, that later can be read by any other ontology editor like <a href="https://protege.stanford.edu/">Protegé</a>. So the use of our specification is two fold, on the one hand it provides you with the resources to construct fine grained conceptualizations of your ontologies and also a way to automatically generate the OWL code of your model. The service is a drag and drop application accessible throught the following <a href="">link</a>.<br>
 

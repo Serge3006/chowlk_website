@@ -13,15 +13,19 @@ Apache 2.0 License
 
 1. [Introduction](#introduction)
 2. [Specification](#specification)
-3. [CHOWLK Code Generation Service](#service)
-4. [References](#references)
-5. [Acknowledgment](#acknowledgment)
+3. [Example](#example)
+4. [CHOWLK Code Generation Service](#service)
+5. [References](#references)
+6. [Acknowledgment](#acknowledgment)
 
 <a name="introduction"></a>
 {% include introduction.md %}
 
 <a name="specification"></a>
 {% include specification.md %}
+
+<a name="example"></a>
+{% include example.md %}
 
 <a name="service"></a>
 {% include service.md %}
